@@ -15,6 +15,10 @@ app.get("/users", (req, res) => {
   res.send(users);
 });
 
+app.post("/users", (req, res) => {
+  console.log(res.body);
+});
+
 app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
 });
